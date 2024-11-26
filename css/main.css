@@ -1,0 +1,346 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #201b2d;
+	font-size: 15px;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+div, p, input, button, form, span, a, ul, li {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 900;
+}
+
+p {
+	line-height: 1.65em;
+}
+
+.main-header {
+	background: rgb(87,142,255);
+	background: linear-gradient(360deg, rgba(87,142,255,1) 27%, rgba(144,202,255,1) 100%);
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.content-wrapper {
+	width: 1024px;
+	margin: 0 auto;
+}
+
+.header-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	margin-bottom: 100px;
+}
+
+.intro-section {
+	width: 700px;
+}
+
+.intro-title {
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 40px;
+	margin-bottom: 10px;
+}
+
+.intro-highlight {
+	font-size: 48px;
+	font-weight: 700;
+}
+
+.intro-description {
+	font-size: 16px;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+
+.intro-btn {
+	display: block;
+	width: 220px;
+	height: 55px;
+	background-color: #ffcc00;
+	font-weight: bold;
+	color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+
+.header-image {
+	width: 400px;
+}
+
+.services-section {
+	background-color: white;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.section-title {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.service-cards {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: black;
+	font-family: 'Ubuntu', sans-serif;
+	margin: 50px 0;
+}
+
+.service-item {
+	text-align: center;
+}
+
+.service-img {
+	margin-bottom: 20px;
+}
+
+.service-title {
+	margin-bottom: 10px;
+}
+
+.service-description {
+	margin-bottom: 10px;
+}
+
+.contact-section {
+	background-color: #e6f0f8;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.contact-form {
+	border: #000000;
+	text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+	width: 350px;
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	font-size: 14px;
+}
+
+button[type="submit"] {
+	background-color: #ffcc00;
+	color: #000;
+	border: none;
+	padding: 10px;
+	margin: 10px 0;
+	width: 350px;
+	font-size: 16px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.site-footer {
+	background: rgb(99,134,207);
+	background: linear-gradient(360deg, rgba(99,134,207,1) 27%, rgba(0,89,170,1) 100%);
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.footer-text {
+	color: white;
+	text-align: center;
+}
+
+.page-wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.main-header, .services-section, .contact-section {
+	flex-grow: 1;
+}
+
+.contact-form, .order-form-section {
+    background-color: #e6f0f8;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input, .contact-form textarea, .contact-form select, .contact-form button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.contact-form button {
+    background-color: #ffcc00;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #e6b800;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: green;
+}
+
+.section-title {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.order-form-section {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Версия для экранов 1200px и меньше */
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 960px;
+    }
+}
+
+/* Версия для экранов 992px и меньше */
+@media screen and (max-width: 992px) {
+    .content-wrapper { 
+        width: 720px;
+    }
+    .header-content { 
+        flex-direction: column;
+        align-items: center;
+    }
+    .intro-section { 
+        width: 100%;
+        text-align: center;
+    }
+    
+    .intro-btn { 
+        width: 100%;
+    }
+    .header-image { 
+        width: 300px;
+        margin-top: 30px;
+    }
+    .intro-title { 
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .intro-highlight { 
+        font-size: 36px;
+    }
+    .services-section { /* заменили .content-inner на .services-section */
+        flex-direction: column;
+        align-items: center;
+    }
+    .service-item { /* заменили .block на .service-item */
+        width: 100%;
+        margin: 20px auto;
+    }
+    .contact-form { /* заменили .form на .contact-form */
+        width: 100%;
+        text-align: center;
+    }
+    .logo { /* оставили .logo, если используется в main.css */
+        margin: 20px auto;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    button[type="submit"] {
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+/* Версия для экранов 768px и меньше */
+@media screen and (max-width: 768px) {
+    .content-wrapper {
+        width: 100%;
+        padding: 0 15px;
+    }
+    .main-header, .contact-section, .services-section { /* заменили .header, .form-Box, .content-Box на соответствующие классы из main.css */
+        padding: 20px 0;
+    }
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .intro-section {
+        width: 100%;
+        text-align: center;
+    }
+    .header-image {
+        width: 50%;
+        margin-top: 30px;
+    }
+    .intro-title {
+        font-size: 22px;
+        line-height: 28px;
+    }
+    .intro-highlight {
+        font-size: 30px;
+    }
+    .services-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .service-item { 
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .contact-form { 
+        width: 100%;
+        text-align: center;
+    }
+    .intro-btn { 
+        width: 100%;
+        max-width: 300px;
+        margin: 20px auto; 
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    button[type="submit"] {
+        width: 100%;
+        font-size: 16px;
+    }
+    .footer-text { 
+        font-size: 12px;
+    }
+}
